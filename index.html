@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+@font-face{
+            font-family:BrandonText-Regular;
+			src: url("BrandonText-Regular.otf");
+		}
+@font-face{
+            font-family:BrandonText-Medium;
+			src: url("BrandonText-Medium.otf");
+		}
+@font-face{
+            font-family:BrandonText-Bold;
+			src: url("BrandonText-Bold.otf");
+		}
+@font-face{
+            font-family:HelveticaNeue-Light;
+			src: url("HelveticaNeue-Light.ttf");
+		}
+@font-face{
+            font-family:Arial;
+			src: url("Arial.ttf");
+         }	 
+#bcontainer1{
+       height:5vw;
+	   width:5vw;
+	   border-radius:0.5vw;
+	   border:1px solid #0395FD;
+	   margin-left:4%;
+	   margin-top:1%;
+  
+}
+#bcontainer2{
+       height:5vw;
+	   width:5vw;
+	   border-radius:0.5vw;
+	   border:1px solid #0395FD;
+	   margin-left:10%;
+	   margin-top:-5.15%;
+  
+}
+     		
+
+		 
+#playerAbox{
+              margin-top:1%;
+              margin-left:4%;
+              width:15vw;
+			  height:4.5vw;
+			  background-color:#0395FD;
+			  text-align:center;
+			  font:3vw BrandonText-Medium;
+			  color:white;
+			  
+			}
+.firstrow{
+            display:flex;
+            margin-top:-11%;
+            margin-left:22%;
+			width:100%;
+      }			
+.firstrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:0.8vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	  
+	 }
+
+.secondrow{
+            display:flex;
+            margin-top:0.8vw;
+            margin-left:22%;
+			width:100%;
+      }			
+.secondrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:36.12vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	   
+	 } 
+	 
+.thirdrow{
+            display:flex;
+            margin-top:0.8vw;
+            margin-left:22%;
+			width:100%;
+      }			
+.thirdrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:36.12vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	  
+	 }  
+	 
+.fourthrow{
+            display:flex;
+            margin-top:0.8vw;
+            margin-left:22%;
+			width:100%;
+      }			
+.fourthrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:36.12vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	 
+	 }
+	 
+.fifthrow{
+            display:flex;
+            margin-top:0.8vw;
+            margin-left:22%;
+			width:100%;
+      }			
+.fifthrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:36.12vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	 
+	 }    
+.sixthrow{
+            display:flex;
+            margin-top:0.8vw;
+            margin-left:22%;
+			width:100%;
+      }			
+.sixthrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:36.12vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	   
+	 }    
+.seventhrow{
+            display:flex;
+            margin-top:0.8vw;
+            margin-left:22%;
+			width:100%;
+      }			
+.seventhrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:36.12vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	 }    
+
+.eighthrow{
+            display:flex;
+            margin-top:0.8vw;
+            margin-left:22%;
+      }			
+.eighthrow > .tokenbox{
+	   height:5vw;
+	   width:5vw;
+	   margin-right:0.8vw;
+	   border-radius:0.5vw;
+	   border:1px solid green;
+	 }
+
+#playerBbox{
+              margin-top:-11%;
+              margin-left:72%;
+              width:15vw;
+			  height:4.5vw;
+			  background-color:#FD0307;
+			  text-align:center;
+			  font:3vw BrandonText-Medium;
+			  color:white;
+			  
+			}
+
+#rcontainer1{
+       height:5vw;
+	   width:5vw;
+	   border-radius:0.5vw;
+	   border:1px solid #FD0307;
+	   margin-left:72%;
+	   margin-top:1.5%;
+  
+}
+#rcontainer2{
+       height:5vw;
+	   width:5vw;
+	   border-radius:0.5vw;
+	   border:1px solid #FD0307;
+	   margin-left:78%;
+	   margin-top:-5.15%;
+  
+}			
+.imgred{
+         margin-top:0.2vw;
+         margin-left:0.4vw;
+		 
+		}
+.imgblue{
+         margin-top:0.2vw;
+         margin-left:0.4vw;
+		 
+		}
+		
+.centerbox{
+       margin-top:-33%;
+	   margin-left:37%;
+	   height:18vw;
+	   width:16vw;
+	   border-radius:2vw;
+	   border:1px solid #3DFE03;
+	 }
+.playerturntext{
+       margin-top:6%;
+	   margin-left:13%;
+	   font:2vw BrandonText-Medium;
+	   color: #03FEDD;
+	   font-weight:bold;
+	 }
+#playerturnid{
+       margin-top:-17%;
+	   margin-left:70%;
+	   font:2vw BrandonText-Medium;
+	   color: #03FEDD;
+	   font-weight:bold;
+	 }	 
+	 
+#rollbutton {
+  margin-left:13%;
+  margin-top:8%;
+  height:3vw;
+  width:6vw;
+  background-color:#03FEDD;
+  border-radius:0.5vw;
+  color: white;
+  text-align: center;
+  font: 2vw Arial;
+  box-shadow: 2px grey;
+ }
+ 
+#rollnumber {
+  margin-left:67%;
+  margin-top:-18%;
+  height:2.7vw;
+  width:3vw;
+  padding-top:2%;
+  background-color:#03FEDD;
+  border-radius:50%;
+  border:1px solid grey;
+  color: white;
+  text-align: center;
+  font: 2vw Arial;
+  box-shadow: 2px grey;
+ }
+ 
+.or{
+      font:1.5vw Arial;
+	  color:black;
+	  text-align:center;
+	  margin-top:8%;
+	  text-weight:bold;
+	}
+.selectnumber{
+               margin-left:20%;
+               margin-top:8%;
+			}
+.numberdropdown{
+                 height:1.8vw;
+				 width:4vw;
+               }				 
+.numberdropdown > option{
+                           font:1vw Arial;
+						 }
+.numbersubmit{
+                 height:1.7vw;
+				 width:6vw;
+				 padding:0;
+				 font:1.2vw Arial;
+				 text-align:center;
+				 background-color:#03FEDD;
+				 color:white;
+               }
+</style>
+</head>
+<title>
+</title>
+<body>
+<div id="bcontainer1"></div>
+<div id="bcontainer2"></div>
+<div id="playerAbox">PLAYER A</div>
+<div class="firstrow">
+              <div class="tokenbox" id="container1" style="background-color:#03A4FD"></div>
+              <div class="tokenbox" id="container2"></div>
+              <div class="tokenbox" id="container3"></div>
+              <div class="tokenbox" id="container4"></div>
+              <div class="tokenbox" id="container5"></div>
+              <div class="tokenbox" id="container6"></div>
+              <div class="tokenbox" id="container7"></div>
+              <div class="tokenbox" id="container8"></div>
+</div>
+<div class="secondrow">
+              <div class="tokenbox" id="container28" style="background-color:#03C6FD"></div>
+              <div class="tokenbox" id="container9"></div>
+</div>
+<div class="thirdrow">
+              <div class="tokenbox" id="container27"></div>
+              <div class="tokenbox" id="container10"></div>
+</div>
+<div class="fourthrow">
+              <div class="tokenbox" id="container26"></div>
+              <div class="tokenbox" id="container11" ></div>
+</div>
+<div class="fifthrow">
+              <div class="tokenbox" id="container25"></div>
+              <div class="tokenbox" id="container12"></div>
+</div>
+<div class="sixthrow">
+              <div class="tokenbox" id="container24"></div>
+              <div class="tokenbox" id="container13"></div>
+</div>
+<div class="seventhrow">
+              <div class="tokenbox" id="container23"></div>
+              <div class="tokenbox" id="container14"style="background-color:#FD4F03"></div>
+</div>
+<div class="eighthrow">
+              <div class="tokenbox" id="container22" ></div>
+              <div class="tokenbox" id="container21"></div>
+              <div class="tokenbox" id="container20"></div>
+              <div class="tokenbox" id="container19"></div>
+              <div class="tokenbox" id="container18"></div>
+              <div class="tokenbox" id="container17"></div>
+              <div class="tokenbox" id="container16"></div>
+              <div class="tokenbox" id="container15" style="background-color:#FD1603"></div>
+</div>
+<div id="playerBbox">PLAYER B</div>
+<div id="rcontainer1"></div>
+<div id="rcontainer2"></img></div>
+
+<div class="centerbox">
+<div class="playerturntext">TURN &#8594 </div>
+<div id="playerturnid">A</div>
+<button onclick="rollfunction()" id="rollbutton">ROLL</button> 
+<div id="rollnumber"></div>
+<div class="or">OR</div>
+
+</div>
+
+
+
+
+<script>
+var rtrack1=0;
+var rtrack2=0;
+var btrack1=0;
+var btrack1=0;
+var i=0;
+var clickcount=0;
+var redclick=0;
+var blueclick=0;
+
+var numondice;
+
+var bluepiece1 = document.createElement("img");
+  bluepiece1.setAttribute("src", "bluepiece.png");
+  bluepiece1.setAttribute("width", "90px");
+  bluepiece1.setAttribute("height", "100px");
+  bluepiece1.setAttribute("style", "margin-top:0.2vw;margin-left:0.4vw");
+  appendsingle("bcontainer1",bluepiece1); 
+   
+var bluepiece2 = document.createElement("img");
+  bluepiece2.setAttribute("src", "bluepiece.png");
+  bluepiece2.setAttribute("width", "90x");
+  bluepiece2.setAttribute("height", "100px");
+  bluepiece2.setAttribute("style", "margin-top:0.2vw;margin-left:0.4vw");
+    appendsingle("bcontainer2",bluepiece2); 
+ 
+var redpiece1 = document.createElement("img");
+  redpiece1.setAttribute("src", "redpiece.png");
+  redpiece1.setAttribute("width", "90px");
+  redpiece1.setAttribute("height", "100px");
+  redpiece1.setAttribute("style", "margin-top:0.2vw;margin-left:0.4vw");
+    appendsingle("rcontainer1",redpiece1); 
+
+   
+var redpiece2 = document.createElement("img");
+  redpiece2.setAttribute("src", "redpiece.png");
+  redpiece2.setAttribute("width", "90px");
+  redpiece2.setAttribute("height", "100px");
+  redpiece2.setAttribute("style", "margin-top:0.2vw;margin-left:0.4vw");
+  appendsingle("rcontainer2",redpiece2);
+   
+   
+function removeimg(parentcontainer,imgid)
+         {
+		    var parent = document.getElementById(parentcontainer);
+            var child = imgid;
+            parent.removeChild(child);
+         }
+
+function rollfunction(){
+                  numondice=Math.floor(Math.random() * (6) ) + 1; 
+                  document.getElementById("rollnumber").innerHTML=numondice;
+				  clickcount++;
+            }	
+
+document.getElementById("rollbutton").onclick=rollfunction();			
+
+function appendsingle(contid,imgageid) {
+                   document.getElementById(contid).appendChild(imageid);
+				}
+
+ 
+
+
+function appenddouble(containerid,imgid1,imgid2) {
+                       imgid1.setAttribute("width", "45px");
+                       imgid1.setAttribute("height", "55px");
+                       imgid2.setAttribute("width", "45px");
+                       imgid2.setAttribute("height", "55px");
+					document.getElementById(containerid).appendChild(imgid1);   
+					document.getElementById(containerid).appendChild(imgid2); 
+          }					
+
+redpiece1.onclick.disabled=true;
+redpiece2.onclick.disabled=true;
+bluepiece1.onclick.disabled=true;
+bluepiece2.onclick.disabled=true;
+
+
+function gameloop() {
+redpiece1.onclick.disabled=true;
+redpiece2.onclick.disabled=true;
+bluepiece1.onclick.disabled=true;
+bluepiece2.onclick.disabled=true; 
+   if(i%2==0) {  document.getElementById("playerturnid").innerHTML="A";}
+   if(i%2 != 0) {  document.getElementById("playerturnid").innerHTML="B";}
+
+   if(clickcount==1) { document.getElementById("rollbutton").disabled=true; clickcount=0;}
+   
+   if(clickcount==1 && i%2==0) { bluepiece1.onclick.disabled=false;
+                                 bluepiece2.onclick.disabled=false;
+								 movebluepiece();
+								 }
+	
+   if(clickcount==1 && i%2!=0) { redpiece1.onclick.disabled=false;
+                                 redpiece2.onclick.disabled=false; 
+								 moveredpiece();
+								 }
+								 
+	
+	
+}
+								 
+function movebluepiece() {
+    if(btrack1==0) { appendsingle("bcontainer1",bluepiece1);}
+    if(btrack2==0) { appendsingle("bcontainer2",bluepiece2);}
+    if(numondice==6 && btrack1==0) {
+	                    bluepiece1.onclick= {  btrack1++ ;
+						                       removeimg("bcontainer1",bluepiece1);
+						                       if(btrack1==btrack2) { appenddouble("container1",bluepiece1,bluepiece2);}
+						                       if(btrack1==rtrack1) { removeimg("container1",redpiece1);
+											                          appendsingle("rcontainer1",redpiece1);
+											                          appendsingle("container1",bluepiece1);
+																	  rtrack1=0;
+																	 }
+                                               if(btrack1==rtrack2) { removeimg("container1",redpiece2);
+											                          appendsingle("rcontainer2",redpiece2);
+											                          appendsingle("container1",bluepiece1);
+																	  rtrack2=0;
+																	}
+											   else { appendsingle("container1",bluepiece1);}
+											}
+									}		
+     if(numondice==6 && btrack2==0) {
+	                    bluepiece2.onclick= {  btrack2=1;
+						                       removeimg("bcontainer2",bluepiece2);
+						                       if(btrack1==btrack2) { appenddouble("container1",bluepiece1,bluepiece2);}
+						                       if(btrack2==rtrack1) { removeimg("container1",redpiece1);
+											                          appendsingle("rcontainer1",redpiece1);
+											                          appendsingle("container1",bluepiece2);
+																	  rtrack1=0;
+																	 }
+                                               if(btrack2==rtrack2) { removeimg("container1",redpiece2);
+											                          appendsingle("rcontainer2",redpiece2);
+											                          appendsingle("container1",bluepiece2);
+																	  rtrack2=0;
+																	}
+											   else { appendsingle("container1",bluepiece2);}
+											}															 
+			                        }
+			  
+     if(btrack1>0 && (btrack1+numondice)<=28) { bluepiece1.onclick= { 
+	                  removeimg("container"+ btrack1,bluepiece1);
+					  btrack1+=numondice;
+					  if(btrack1==btrack2) { appenddouble("container" + btrack1,bluepiece1,bluepiece2);}
+				      if(btrack1==rtrack1) { removeimg("container"+ btrack1,redpiece1);
+					                         appendsingle("rcontainer1",redpiece1);
+											 appendsingle("container" + btrack1,bluepiece1);
+				                             rtrack1=0;
+					                        }
+                      if(btrack1==rtrack2) { removeimg("container" + btrack1,redpiece2);
+					                         appendsingle("rcontainer2",redpiece2);
+											 appendsingle("container" + btrack1,bluepiece1);
+				                             rtrack2=0;
+				                           }
+					  else { appendsingle("container" + btrack1,bluepiece1);}
+	 
+	                                }
+                   }    	 
+			  
+     if(btrack2>0 && (btrack2+numondice)<=28) { bluepiece2.onclick= { 
+	                  removeimg("container"+ btrack2,bluepiece2);
+					  btrack2+=numondice;
+					  if(btrack1==btrack2) { appenddouble("container" + btrack2,bluepiece1,bluepiece2);}
+				      if(btrack2==rtrack1) { removeimg("container"+ btrack2,redpiece1);
+					                         appendsingle("rcontainer1",redpiece1);
+											 appendsingle("container" + btrack2,bluepiece2);
+				                             rtrack1=0;
+					                        }
+                      if(btrack2==rtrack2) { removeimg("container" + btrack2,redpiece2);
+					                         appendsingle("rcontainer2",redpiece2);
+											 appendsingle("container" + btrack2,bluepiece2);
+				                             rtrack2=0;
+				                           }
+					  else { appendsingle("container" + btrack2,bluepiece2);}
+	 
+	                                }
+                   }
+   clickcount=0;
+	if(numondice!=6) { i++;}				   
+   gameloop();			  	  
+}
+
+function moveredpiece() {
+
+    if(rtrack1==0) { appendsingle("rcontainer1",redpiece1);}
+    if(rtrack2==0) { appendsingle("rcontainer2",redpiece2);}
+    if(numondice==6 && rtrack1==0) {
+	                    redpiece1.onclick= {   rtrack1=1;
+						                       removeimg("rcontainer1",redpiece1);
+						                       if(rtrack1==rtrack2) { appenddouble("container15",redpiece1,redpiece2);}
+						                       if((rtrack1+14)==btrack1) { removeimg("container15",buepiece1);
+											                                appendsingle("bcontainer1",bluepiece1);
+											                               appendsingle("container15",redpiece1);
+																	        btrack1=0;
+																	 }
+                                               if((rtrack1+14)==btrack2) { removeimg("container15",bluepiece2);
+											                               appendsingle("bcontainer2",bluepiece2);
+											                          appendsingle("container15",redpiece1);
+																	  btrack2=0;
+																	}
+											   else { appendsingle("container15",redpiece1);}
+											}
+									}		
+     if(numondice==6 && rtrack2==0) {
+	                    redpiece2.onclick= {  rtrack2=1;
+						                       removeimg("rcontainer2",redpiece2);
+						                       if(rtrack1==rtrack2) { appenddouble("container15",redpiece1,redpiece2);}
+						                       if((rtrack2+14)==btrack1) { removeimg("container15",buepiece1);
+											                                appendsingle("bcontainer1",bluepiece1);
+											                               appendsingle("container15",redpiece2);
+																	        btrack1=0;
+																	 }
+                                               if((rtrack2+14)==btrack2) { removeimg("container15",bluepiece2);
+											                               appendsingle("bcontainer2",bluepiece2);
+											                          appendsingle("container15",redpiece2);
+																	  btrack2=0;
+																	}
+											   else { appendsingle("container15",redpiece2);}
+											}															 
+			                        }
+			  
+     if(rtrack1>0 && (rtrack1+numondice)<=14) { redpiece1.onclick= { 
+	                  removeimg("container"+ (rtrack1+14),redpiece1);
+					  rtrack1+=numondice;
+					  if(rtrack1==rtrack2) { appenddouble("container" + (rtrack1+14),redpiece1,redpiece2);}
+				      if(rtrack1==btrack1) { removeimg("container"+ (rtrack1+14),bluepiece1);
+					                         appendsingle("bcontainer1",bluepiece1);
+											 appendsingle("container" + (rtrack1+14),redpiece1);
+				                             btrack1=0;
+					                        }
+                      if(rtrack1==btrack2) { removeimg("container" + (rtrack1+14),bluepiece2);
+					                         appendsingle("bcontainer2",bluepiece2);
+											 appendsingle("container" + (rtrack1+14),redpiece1);
+				                             btrack2=0;
+				                           }
+					  else { appendsingle("container" + (rtrack1+14),redpiece1);}
+	 
+	                                }
+                   }
+
+     if(rtrack1>0 && (rtrack1+numondice)>14 && (rtrack1+numondice)<=28 ) { redpiece1.onclick= { 
+	                  removeimg("container"+ (rtrack1-14),redpiece1);
+					  rtrack1+=numondice;
+					  if(rtrack1==rtrack2) { appenddouble("container" + (rtrack1-14),redpiece1,redpiece2);}
+				      if(rtrack1==btrack1) { removeimg("container"+ (rtrack1-14),bluepiece1);
+					                         appendsingle("bcontainer1",bluepiece1);
+											 appendsingle("container" + (rtrack1-14),redpiece1);
+				                             btrack1=0;
+					                        }
+                      if(rtrack1==btrack2) { removeimg("container" + (rtrack1-14),bluepiece2);
+					                         appendsingle("bcontainer2",bluepiece2);
+											 appendsingle("container" + (rtrack1-14),redpiece1);
+				                             btrack2=0;
+				                           }
+					  else { appendsingle("container" + (rtrack1-14),redpiece1);}
+	 
+	                                }
+                   }
+
+     if(rtrack2>0 && (rtrack2+numondice)<=14) { redpiece2.onclick= { 
+	                  removeimg("container"+ (rtrack2+14),redpiece2);
+					  rtrack2+=numondice;
+					  if(rtrack1==rtrack2) { appenddouble("container" + (rtrack2+14),redpiece1,redpiece2);}
+				      if(rtrack1==btrack1) { removeimg("container"+ (rtrack2+14),bluepiece1);
+					                         appendsingle("bcontainer1",bluepiece1);
+											 appendsingle("container" + (rtrack2+14),redpiece2);
+				                             btrack1=0;
+					                        }
+                      if(rtrack1==btrack2) { removeimg("container" + (rtrack2+14),bluepiece2);
+					                         appendsingle("bcontainer2",bluepiece2);
+											 appendsingle("container" + (rtrack2+14),redpiece2);
+				                             btrack2=0;
+				                           }
+					  else { appendsingle("container" + (rtrack2+14),redpiece2);}
+	 
+	                                }
+                   }
+
+     if(rtrack2>0 && (rtrack2+numondice)>14 && (rtrack2+numondice)<=28 ) { redpiece2.onclick= { 
+	                  removeimg("container"+ (rtrack2-14),redpiece1);
+					  rtrack2+=numondice;
+					  if(rtrack1==rtrack2) { appenddouble("container" + (rtrack2-14),redpiece1,redpiece2);}
+				      if(rtrack2==btrack1) { removeimg("container"+ (rtrack2-14),bluepiece1);
+					                         appendsingle("bcontainer1",bluepiece1);
+											 appendsingle("container" + (rtrack2-14),redpiece2);
+				                             btrack1=0;
+					                        }
+                      if(rtrack2==btrack2) { removeimg("container" + (rtrack2-14),bluepiece2);
+					                         appendsingle("bcontainer2",bluepiece2);
+											 appendsingle("container" + (rtrack2-14),redpiece2);
+				                             btrack2=0;
+				                           }
+					  else { appendsingle("container" + (rtrack2-14),redpiece2);}
+	 
+	                                }
+                   }				   
+			  
+    clickcount=0;
+	if(numondice!=6) { i++;} 	  
+  gameloop();			  	  
+}
+   
+
+
+
+gameloop();
+
+
+</script>
+</body>
+</html>
